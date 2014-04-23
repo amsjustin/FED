@@ -1,59 +1,50 @@
 <!DOCTYPE HTML>
-<html>
-<head>
-	<title>Front end</title>
-	<meta charset="UTF-8">
-	<style>
-		body{
-			font-family: arial;
-		}
-		
-		nav {
-			width:100%;
-			float:left;
-			margin-bottom: 20px;
-		}
-		
-		nav ul{
-			list-style: none;
-		}
-		
-		nav li{
-			float:left;
-			padding-right: 10px;
-		}
-		
-		nav li a{
-			text-decoration: underline;
-			color: #000;
-		}
-		
-		a {
-			text-decoration: underline;
-			color: #000;
-		}
-		form label{
-			width:100%;
-			float:left;
-			margin-bottom: 10px;
-		}
-	</style>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
-</head>
+<html class="no-js">
+	<head>
+		<title>Front end</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" type="text/css" href="style.ie8.css" />
+		<![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="modernizr.custom.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+		<script src="control.js"></script>
+	</head>
 	<body>
 		<nav>
 			<ul>
-				<li><a href="#">Opleiding</a></li>
+				<li><a href="index.html">Opleiding</a></li>
 				<li><a href="#">Onderwijsprogramma</a></li>
 				<li><a href="#">Organisatie</a></li>
 				<li><a href="#">Stages en projecten</a></li>
+				<li><a href="aanmelden.html">Aanmelden</a></li>
 			</ul>
 		</nav>
 		
 		<section>
 			<h1>Opleiding</h1>
 			<article>
+				<!--[if lte IE 8]>
+					<h1>Je gebruikt antieke shizzles.</h1>
+					<ul>
+						<li><a href="http://www.chrome.com">chrome</a></li>
+						<li><a href="http://www.firefox.com">firefox</a></li>
+					</ul>
+				<![endif]-->
+				
 				<h1>CMD Amsterdam</h1>	
+				
+				
+					<ul class="bxslider">
+					  <li><img src="http://justinbegnor.com/frontend/noidea.jpg" /></li>
+					  <li><img src="http://justinbegnor.com/frontend/noidea.jpg" /></li>
+					  <li><img src="http://justinbegnor.com/frontend/noidea.jpg" /></li>
+					  <li><img src="http://justinbegnor.com/frontend/noidea.jpg" /></li>
+					</ul>
+				
 				
 				<p>De opleiding Communication & Multimedia Design (CMD) Amsterdam leert studenten alles over het ontwerpen van online interactieve media. Dit betekent het begrijpen, bedenken en maken van interactieve media zoals websites, mobiele applicaties en interactieve televisie. Bij het ontwerpen van interactieve media staat de mens centraal. Niet alleen als eindgebruiker van een toepassing maar ook in de context van zijn leefomgeving. Studenten doen toegepast onderzoek en leren hun ontwerpen te testen op usability, gebruikersbehoefte en meetbare eindresultaten. Ze leren werken in multidisciplinaire projectteams aan opdrachten voor echte projectpartners.</p>
 				
@@ -61,16 +52,16 @@
 				
 				<video poster="http://camendesign.com/code/video_for_everybody/poster.jpg" controls tabindex="0" title="My Movie">
 					<source src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4">
-					<track src="http://developer.longtailvideo.com/trac/export/2584/trunk/jw6/test/assets/captions/bunny-en.vtt" label="English Captions" kind="subtitles" srclang="en-us" default />
 					<source  src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.webm" type='video/webm' />
 					<source  src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.ogv" type='application/ogg' />
+					<track src="http://developer.longtailvideo.com/trac/export/2584/trunk/jw6/test/assets/captions/bunny-en.vtt" label="English Captions" kind="subtitles" srclang="en-us" default />
 				</video>
 			</article>
 			
 			<article>
 				<h1>Ontwerp opleiding voor Interactieve Media</h1>
 				
-				<p>CMD Amsterdam stelt ontwerpen centraal in de opleiding. Zij wil studenten leren te denken als een ontwerper en opleiden tot interactieve media ontwerpers met een goede aansluiting op de huidige én de toekomstige beroepspraktijk.</p>
+				<p>CMD Amsterdam stelt ontwerpen centraal in de opleiding. Zij wil studenten leren te denken als een ontwerper en opleiden tot interactieve media ontwerpers met een goede aansluiting op de huidige en de toekomstige beroepspraktijk.</p>
 				
 				<blockquote><p>CMD Amsterdam is een ontwerpopleiding die studenten opleidt om te denken als een ontwerper bij het ontwikkelen van interactieve toepassingen;</p></blockquote>
 				
@@ -105,38 +96,22 @@
 				
 				<p>Mocht je als aankomend student meer willen weten of contact op willen nemen met een afgestudeerde studenten? Neem contact [<a href="#">contact</a>] met ons op.</p>
 				
-				<p>Uitstroomberoepen:
-					<ol>
-						<li>Frontend developer [<a href="#">beroep frontend developer</a>]</li>
-						<li>Visual designer [<a href="#">beroep visual designer</a>]</li>
-						<li>Interactiondesigner [<a href="#">beroep interaction designer</a>]</li>
-						<li>Content manager [<a href="#">beroep content manager</a>]</li>
-						<li>Projectmanager [<a href="#">beroep project manager</a>]</li>
-					</ol>
-				</p>
+				<p>Uitstroomberoepen:</p>
+				<ol>
+					<li>Frontend developer [<a href="#">beroep frontend developer</a>]</li>
+					<li>Visual designer [<a href="#">beroep visual designer</a>]</li>
+					<li>Interactiondesigner [<a href="#">beroep interaction designer</a>]</li>
+					<li>Content manager [<a href="#">beroep content manager</a>]</li>
+					<li>Projectmanager [<a href="#">beroep project manager</a>]</li>
+				</ol>
 			</article>
 		</section>
 		
 		<section>
-			<form>
-				<fieldset>
-					<legend>Contactgegevens</legend>
-						<label>Naam<input type="text"></label>
-						<label>E-mail<input type="email"></label>
-						<label>Straatnaam<input type="text"></label>
-						<label>Nummer<input></label>
-						<label>Postcode<input></label>
-						<label>Land<input type="text"></label>
-						<label>Telefoonnummer<input type="tel"></label>
-				</fieldset>
-				<fieldset ng-app>
-						<legend>Voorkeuren</legend>
-							<label>Lievelingskleur: <input type="color"><br /></label><br />
-							<label>Leukste maand: <input type="month"></label><br />
-							<label>Hoe goed is dit ongeveer? <input type="range" min="0" max="10" ng-init="updatelive=5" ng-model="updatelive" class="liveupdate">{{updatelive}}</label>	
-				</fieldset>
-			</form>
+			<h1>rechtercontent</h1>
 		</section>
+		
 		<footer>CMD 2014</footer>
 	</body>
+	
 </html>

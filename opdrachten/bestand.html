@@ -1,0 +1,63 @@
+body{
+	font-family: arial;
+}
+
+h1:hover, h2:hover {
+	text-decoration: underline;
+}
+
+
+
+nav {
+	width:100%;
+	float:left;
+	margin-bottom: 20px;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	float:left;
+	padding-right: 10px;
+}
+
+nav li a{
+	text-decoration: none;
+	color: #000;
+}
+
+form label{
+	width:100%;
+	float:left;
+	margin-bottom: 10px;
+}
+
+a {
+	text-decoration: underline;
+	color: #000;
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+
+<section>
+	<form>
+		<fieldset>
+			<legend>Contactgegevens</legend>
+				<label>Naam<input type="text"></label>
+				<label>E-mail<input type="email"></label>
+				<label>Straatnaam<input type="text"></label>
+				<label>Nummer<input></label>
+				<label>Postcode<input></label>
+				<label>Land<input type="text"></label>
+				<label>Telefoonnummer<input type="tel"></label>
+		</fieldset>
+		<fieldset ng-app>
+				<legend>Voorkeuren</legend>
+					<label>Lievelingskleur: <input type="color"><br /></label><br />
+					<label>Leukste maand: <input type="month"></label><br />
+					<label>Hoe goed is dit ongeveer? <input type="range" min="0" max="10" ng-init="updatelive=5" ng-model="updatelive" class="liveupdate">{{updatelive}}</label>	
+		</fieldset>
+	</form>
+</section>

@@ -1,0 +1,184 @@
+body{
+	font-family: georgia;
+	background-color: #fffff8;
+	font-size: large;
+	width: 100%;
+	margin:auto;
+	color:#5c5c5c;
+}
+
+blockquote > p {
+	font-style: italic;
+}
+
+a {
+	text-decoration: underline;
+	color: #434040;
+}
+
+a:hover {
+	color: #1cb9d5;
+}
+
+h1:hover, h2:hover {
+	text-decoration: underline;
+}
+
+section > article:first-of-type > h1:first-letter {
+	font-size: 120px;
+	float: left;
+}
+
+section > h1:first-child {
+	padding-bottom: 30px;
+}
+
+article {
+	line-height: 35px;
+}
+
+article > h1 {
+	color:#1cb9d5;
+	text-shadow: 3px 3px #63e7ff;
+}
+
+/*--------- [FIGURE&VIDEO] ---------*/
+
+figure {
+	width:100%;
+}
+
+figure > img {
+	max-width: 80%;
+	top: 10%;
+	left: 10%;
+	border-radius: 3px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.9);
+}
+
+/*---- RESPONSIVE DINGEN ----*/
+@media screen and (orientation: portrait) {
+  figure > img { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  figure > img { max-height: 90%; }
+}
+
+video {
+	width:100%;
+	margin: auto;
+}
+
+/*--------- [NAVIGATIE] ---------*/
+
+nav {
+	width: 100%;
+	float: left;
+	margin-bottom: 25px;
+	padding: 20px;
+	background-color: #eeeeee;
+}
+
+nav ul{
+	list-style: none;
+	width:80%;
+	margin: auto;
+	padding: 0;
+}
+
+nav li{
+	float: left;
+	padding-right: 70px;
+}
+
+ul > li:last-child {
+	padding: 0;
+}
+
+/*--------- [FORMULIER] ---------*/
+
+form label{
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+form input:focus {
+	border: dashed olive;
+}
+
+form > fieldset > legend {
+	position: absolute;
+	margin-top: -40px;
+	font-size: 120%;
+	text-shadow: 2px 2px #1cb9d5;
+}
+
+form > fieldset {
+	margin-top: 45px;
+}
+
+form > fieldset {
+	background-color: #e7e7e7;
+}
+
+form fieldset:first-child label:before {
+	color:red;
+	content: "*";
+}
+
+label select {
+	color: #2279af;
+}
+
+label textarea {
+	border: 1px #1cb9d5 solid;
+	border-radius: .3em;
+	box-shadow: 0 0 1em #1cb9d5;
+}
+
+fieldset > input:only-child{
+	transition: none;
+}
+
+fieldset > input:only-of-type:hover{
+	transition: none;
+}
+
+/*--------- [ANIMATIE] ---------*/
+
+nav li a{
+	text-decoration: none;
+	color: #000;
+	transition: font-size 0.5s ease-in-out;
+	transform-origin: center;
+}
+
+nav li a:hover{
+	font-size: 120%;
+}
+
+form input{
+	transition: .5s;
+}
+
+form input:hover {
+	padding: .4em .2em;
+	border: 2px dashed olive;
+}
+
+input[type=radio]{
+	transition: .5s;
+}
+
+input[type=radio]:checked{
+	width:40px;
+}
+
+
+/*--------- [FALLBACKS] ---------*/
+
+.no-boxshadow label textarea {
+	border: 3px solid #63e7ff;
+}

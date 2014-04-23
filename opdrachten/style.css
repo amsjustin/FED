@@ -1,0 +1,292 @@
+body{
+	font-family: georgia;
+	background-color: #fffff8;
+	font-size: large;
+	width: 80%;
+	margin:auto;
+	color:#5c5c5c;
+}
+
+blockquote > p {
+	font-style: italic;
+}
+
+a {
+	text-decoration: underline;
+	color: #434040;
+}
+
+a:hover {
+	color: #1cb9d5;
+}
+
+h1:hover, h2:hover {
+	text-decoration: underline;
+}
+
+section > article:first-of-type > h1:first-letter {
+	font-size: 7.5em;
+	float: left;
+}
+
+section > h1:first-child {
+	padding-bottom: 1.87em;
+}
+
+article {
+	line-height: 2.18em;
+}
+
+article > h1 {
+	color:#1cb9d5;
+	text-shadow: .12em .12em #63e7ff;
+}
+
+body > section:first-of-type {
+	width:80%;
+	float:left;
+}
+
+body > section:last-of-type {
+	width:20%;
+	float:left
+}
+
+footer {
+	width:100%;
+	float:left;
+}
+
+.bxslider {
+	display: none;
+}
+
+/*--------- [FIGURE&VIDEO] ---------*/
+
+figure {
+	width:100%;
+}
+
+figure > img {
+	max-width: 80%;
+	top: 10%;
+	left: 10%;
+	border-radius: .18em;
+	box-shadow: 0 .19em 1.6em rgba(0,0,0,0.9);
+}
+
+/*--------- [NAVIGATIE] ---------*/
+
+nav {
+	width: 100%;
+	float: left;
+	margin-bottom: 1.5em;
+	padding: 1.25em;
+	background-color: #eeeeee;
+}
+
+nav ul{
+	list-style: none;
+	width:80%;
+	margin: auto;
+	padding: 0;
+}
+
+nav li{
+	float: left;
+	padding-right: 4.3em;
+}
+
+ul > li:last-child {
+	padding: 0;
+}
+
+/*--------- [FORMULIER] ---------*/
+
+form label{
+	width: 100%;
+	float: left;
+	margin-bottom: 0.6em;
+}
+
+form input:focus {
+	border: dashed olive;
+}
+
+form > fieldset > legend {
+	position: absolute;
+	margin-top: -2.2em;
+	font-size: 120%;
+	text-shadow: .1em .1em #1cb9d5;
+}
+
+form > fieldset {
+	margin-top: 2.7em;
+}
+
+form > fieldset {
+	background-color: #e7e7e7;
+}
+
+form fieldset:first-child label:before {
+	color:red;
+	content: "*";
+}
+
+label select {
+	color: #2279af;
+}
+
+label textarea {
+	border: 0.06em #1cb9d5 solid;
+	border-radius: .3em;
+	box-shadow: 0 0 1em #1cb9d5;
+}
+
+fieldset > input:only-child{
+	transition: none;
+}
+
+fieldset > input:only-of-type:hover{
+	transition: none;
+}
+
+/*--------- [ANIMATIE] ---------*/
+
+nav li a{
+	text-decoration: none;
+	color: #000;
+	transition: font-size 0.5s ease-in-out;
+	transform-origin: center;
+}
+
+nav li a:hover{
+	font-size: 120%;
+}
+
+form input{
+	transition: .5s;
+}
+
+form input:hover {
+	padding: .4em .2em;
+	border: .12em dashed olive;
+}
+
+input[type=radio]{
+	transition: .5s;
+}
+
+input[type=radio]:checked{
+	width:4em;
+}
+
+/*---- RESPONSIVE DINGEN ----*/
+
+@media screen and (orientation: portrait) {
+  figure > img { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  figure > img { max-height: 90%; }
+}
+
+@media only screen and (max-width: 480px) {
+	nav {
+		max-width: 90%;
+		float: left;
+		margin-bottom: 1.5em;
+		padding: 1.2em;
+		background-color: #eeeeee;
+	}
+	
+	nav ul{
+		list-style: none;
+		width:80%;
+		margin: auto;
+		padding: 0;
+	}
+	
+	nav li{
+		float: left;
+		padding-right: 4.3em;
+		padding-bottom: .9em;
+	}
+	
+	ul > li:last-child {
+		padding: 0;
+	}
+	
+	section > article:first-of-type > h1:first-letter {
+		font-size: 5em;
+		
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	
+	nav {
+		max-width: 90%;
+		float: left;
+		margin-bottom: 1.5em;
+		padding: 1.2em;
+		background-color: #eeeeee;
+	}
+	
+	nav ul{
+		list-style: none;
+		width:50%;
+		margin: auto;
+		padding: 0;
+	}
+	
+	nav li{
+		float: none;
+		padding-right: 4.3em;
+		padding-bottom: .9em;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	
+	nav {
+		max-width: 90%;
+		float: left;
+		margin-bottom: 1.5em;
+		padding: 1.2em;
+		background-color: #eeeeee;
+	}
+	
+	nav ul{
+		list-style: none;
+		width:50%;
+		margin: auto;
+		padding: 0;
+	}
+	
+	nav li{
+		float: none;
+		padding-right: 4.3em;
+		padding-bottom: .9em;
+	}
+}
+
+video {
+	width:100%;
+	margin: auto;
+}
+
+/*--------- [FALLBACKS] ---------*/
+
+.no-boxshadow label textarea {
+	border: .16em solid #63e7ff;
+}
+
+.textshadow {
+	color: #fff;
+	text-shadow: text-shadow: .16em .16em #eeee; 
+}
+
+.touch {
+	
+}
