@@ -20,4 +20,7 @@ $(document).ready(function(){
 	    } else {        
 	}
 	
+	$(window).resize(function(){
+		console.log($(window).width());
+	})
 });

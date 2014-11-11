@@ -4,7 +4,7 @@
 		<title>Front end</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="style-aanmelden.css" />
 		<!--[if lte IE 8]>
 			<link rel="stylesheet" type="text/css" href="style.ie8.css" />
 		<![endif]-->
@@ -22,97 +22,114 @@
 			</ul>
 		</nav>
 		
-		<section>
-			<h1>Aanmelden</h1>
-			<article>
-				<!--[if lte IE 8]>
-					<h1>Je gebruikt antieke shizzles.</h1>
-					<ul>
-						<li><a href="http://www.chrome.com">chrome</a></li>
-						<li><a href="http://www.firefox.com">firefox</a></li>
-					</ul>
-				<![endif]-->
+		<main>
+			<section>
+				<h1>Aanmelden</h1>
+				<article>
+					<!--[if lte IE 8]>
+						<h1>Je gebruikt antieke shizzles.</h1>
+						<ul>
+							<li><a href="http://www.chrome.com">chrome</a></li>
+							<li><a href="http://www.firefox.com">firefox</a></li>
+						</ul>
+					<![endif]-->
+				
+					<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+					
+					<blockquote><p>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</p></blockquote>
+					
+					<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+	Voor vragen of opmerkingen kunt u [<a href="#">contact</a>] met ons opnemen.</p>
+				</article>
+			</section>
+			<section>
+				<form>
+					<fieldset>
+						<legend>Contactgegevens</legend>
+						<label>Naam<input type="text" name="naam" autofocus required></label>					
+						<label>Bedrijf<input type="text" name="bedrijf" required></label>
+						<label>Adres<input type="text" name="adres" required></label>
+						<label>Postcode<input name="postcode" required></label>
+						<label>Plaats<input name="plaats" type="text" required></label>
+						<label>Telefoon<input type="tel" name="telefoon" required></label>
+						<label>E-mail<input type="email" name="email" placeholder="meneer@website.nl" required></label>
+							
+						Ik wil mij aanmelden:
+						<label><input name="aanmeldkeuze" type="radio"> Voor een Project</label>
+						<label><input name="aanmeldkeuze" type="radio"> Als stagebedrijf</label>
+					</fieldset>
+					<fieldset>
+						<legend>Project</legend>
+						<label>Titel<input type="text" name="titel" required></label>
+						<label>Opdrachtomschrijving<input type="text" name="opdrachtomschrijving" required></label>
+						<label>Doelgroepomschrijving<input type="text" name="doelgroepomschrijving" required></label>
+						<label>Doelstelling/intentievanhetproject<input type="text" name="doelstelling/intentievanhetproject" required></label>
+						<label>Looptijd<input type="text" name="looptijd" required></label>
+						<label>Deadline<input type="date" name="deadline" required></label>
+						
+						<label>
+							Geschikt voor
+							<select name="project_geschiktvoor">
+								<option value="eerstejaars studenten">Eerstejaars studenten</option>
+								<option value="tweedejaars studenten">Tweedejaars studenten</option>
+								<option value="derdejaars studenten">Derdejaars studenten</option>
+								<option value="afstudeer studenten">Afstudeer studenten</option>
+								<option value="onbekend">Onbekend</option>
+							</select>
+						</label>
+						
+						<label>Opmerking<textarea name="beschrijving" rows="4" cols="30" placeholder="Plaats hier eventuele opmerkingen (optioneel)"></textarea></label>
+					</fieldset>
+					<fieldset>
+						<legend>Stage</legend>
+							
+						<label>
+							Geschikt voor
+							<select name="stage_geschiktvoor">
+								<option value="tweedejaars studenten">Tweedejaars studenten</option>
+								<option value="afstudeer studenten">Afstudeer studenten</option>
+								<option value="onbekend">Onbekend</option>
+							</select>
+						</label>
+						
+						Hoe lang is de stage?
+						<label><input type="radio" value="stageduur" name="stageduur">10 Weken</label>
+						<label><input type="radio" value="stageduur" name="stageduur">20 weken</label>
+						<label>Begin datum <input type="date" name="begindatum" required></label>	
+						
+						<label>Beschrijving werkzaamheden:<textarea name="beschrijving" rows="4" cols="30" required></textarea></label>
+						
+						Beschrijving stagebedrijf
+						<label>Bedrijfsnaam<input name="bedrijfsnaam" required></label>
+						<label>Adres<input name="adres" required></label>
+						<label>Postcode<input name="postcode" required></label>
+						<label>Plaats<input type="text" name="plaats" required></label>
+						<label>Sector<input type="text" name="sector" required></label>
+						<label>Core Business<input type="text" name="corebusiness" required></label>
+						
+						<label>Opmerking<textarea name="beschrijving" rows="4" cols="30" placeholder="Plaats hier eventuele opmerkingen (optioneel)"></textarea></label>
+					</fieldset>
+					<fieldset>
+						<input type="submit" value="Verzenden">
+					</fieldset>
+				</form>
+			</section>
+		</main>
+		
+		<aside>
+			<h1>Belangrijke mededeling!</h1>
 			
-				<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan! Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook lopen de studenten stage, in het tweede en afstudeerjaar.</p>
-				
-				<blockquote><p>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad Amsterdam.</p></blockquote>
-				
-				<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen. Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
-Voor vragen of opmerkingen kunt u [<a href="#">contact</a>] met ons opnemen.</p>
-			</article>
-		</section>
-		<section>
-			<form>
-				<fieldset>
-					<legend>Contactgegevens</legend>
-					<label>Naam<input type="text" name="naam" autofocus required></label>					
-					<label>Bedrijf<input type="text" name="bedrijf" required></label>
-					<label>Adres<input type="text" name="adres" required></label>
-					<label>Postcode<input name="postcode" required></label>
-					<label>Plaats<input name="plaats" type="text" required></label>
-					<label>Telefoon<input type="tel" name="telefoon" required></label>
-					<label>E-mail<input type="email" name="email" placeholder="meneer@website.nl" required></label>
-						
-					Ik wil mij aanmelden:
-					<label><input name="aanmeldkeuze" type="radio"> Voor een Project</label>
-					<label><input name="aanmeldkeuze" type="radio"> Als stagebedrijf</label>
-				</fieldset>
-				<fieldset>
-					<legend>Project</legend>
-					<label>Titel<input type="text" name="titel" required></label>
-					<label>Opdrachtomschrijving<input type="text" name="opdrachtomschrijving" required></label>
-					<label>Doelgroepomschrijving<input type="text" name="doelgroepomschrijving" required></label>
-					<label>Doelstelling/intentievanhetproject<input type="text" name="doelstelling/intentievanhetproject" required></label>
-					<label>Looptijd<input type="text" name="looptijd" required></label>
-					<label>Deadline<input type="date" name="deadline" required></label>
-					
-					<label>
-						Geschikt voor
-						<select name="project_geschiktvoor">
-							<option value="eerstejaars studenten">Eerstejaars studenten</option>
-							<option value="tweedejaars studenten">Tweedejaars studenten</option>
-							<option value="derdejaars studenten">Derdejaars studenten</option>
-							<option value="afstudeer studenten">Afstudeer studenten</option>
-							<option value="onbekend">Onbekend</option>
-						</select>
-					</label>
-					
-					<label>Opmerking<textarea name="beschrijving" rows="4" cols="50" placeholder="Plaats hier eventuele opmerkingen (optioneel)"></textarea></label>
-				</fieldset>
-				<fieldset>
-					<legend>Stage</legend>
-						
-					<label>
-						Geschikt voor
-						<select name="stage_geschiktvoor">
-							<option value="tweedejaars studenten">Tweedejaars studenten</option>
-							<option value="afstudeer studenten">Afstudeer studenten</option>
-							<option value="onbekend">Onbekend</option>
-						</select>
-					</label>
-					
-					Hoe lang is de stage?
-					<label><input type="radio" value="stageduur" name="stageduur">10 Weken</label>
-					<label><input type="radio" value="stageduur" name="stageduur">20 weken</label>
-					<label>Begin datum <input type="date" name="begindatum" required></label>	
-					
-					<label>Beschrijving werkzaamheden:<textarea name="beschrijving" rows="4" cols="50" required></textarea></label>
-					
-					Beschrijving stagebedrijf
-					<label>Bedrijfsnaam<input name="bedrijfsnaam" required></label>
-					<label>Adres<input name="adres" required></label>
-					<label>Postcode<input name="postcode" required></label>
-					<label>Plaats<input type="text" name="plaats" required></label>
-					<label>Sector<input type="text" name="sector" required></label>
-					<label>Core Business<input type="text" name="corebusiness" required></label>
-					
-					<label>Opmerking<textarea name="beschrijving" rows="4" cols="50" placeholder="Plaats hier eventuele opmerkingen (optioneel)"></textarea></label>
-				</fieldset>
-				<fieldset>
-					<input type="submit" value="Verzenden">
-				</fieldset>
-			</form>
-		</section>
-		<footer></footer>
+			<p>Als je je nu aanmeldt voor de opleiding maak je kans op een gratis set Sharpies!</p>
+			
+			<p>De deadline is vrijdag 25 april voor middernacht. Als je aanmerking wilt komen is het nodig dat je aanmelding voor CMD staat in Studielink.</p>
+		</aside>
+		
+		<aside>
+			<h1>Inloopspreekuur opleidingsmanager as vrijdag</h1>
+			
+			<p>Beste aankomende student, Aanstaande vrijdag is er geen inloopspreekuur bij de opleidingsmanager. Excuses hiervoor. Je bent weer van harte welkom op vrijdag 9 mei.</p>
+		</aside>
+		
+		<footer>CMD 2014</footer>
 	</body>
 </html>
